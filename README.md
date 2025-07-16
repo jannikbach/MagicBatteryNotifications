@@ -36,18 +36,14 @@ The system consists of a shell script (`check_batteries.sh`) that queries your B
 ### 1. Clone the repository using: 
 ``` bash 
 git clone https://github.com/jannikbach/MagicBatteryNotifications.git
+cd MagicBatteryNotifications
+chmod +x ~/check_batteries.sh```
 ```
 
-4.  **Make the script executable:**
-    ```bash
-    cd MagicBatteryNotifications
-    chmod +x ~/check_batteries.sh
-    ```
-
-5.  **Configure the script:**
+**Configure the script:**
     Open `~/check_batteries.sh` again and modify the `KEYBOARD_NAME`, `MOUSE_NAME`, and `LOW_BATTERY_THRESHOLD` variables to match your devices and preferences.
 
-    ```bash
+```bash
     #  Configuration 
     KEYBOARD_NAME="Your Keyboard Name" # IMPORTANT: Replace with the exact name of your keyboard as it appears in System Settings -> Bluetooth
     MOUSE_NAME="Your Mouse Name"     # IMPORTANT: Replace with the exact name of your mouse as it appears in System Settings -> Bluetooth
@@ -60,7 +56,7 @@ git clone https://github.com/jannikbach/MagicBatteryNotifications.git
     *   Note the names of your connected keyboard and mouse exactly as they appear there.
 
     Save and exit the script after making your changes.
-
+```
 
 
 ### 2. Test Notifications
@@ -138,7 +134,7 @@ This `launchd` agent will keep your script running in the background, specifical
     </dict>
     </plist>
     ```
-    *   **Important:** Ensure the path to `check_batteries.sh` is correct: Therefore replace the $PATH_TO_YOUR_MagicBatteryNotifications_REPOSITORY$ placeholder in `check_batteries.sh` with the actual path to this directory on your system.
+    *   **Important:** Ensure the path to `check_batteries.sh` is correct: Therefore replace the `$PATH_TO_YOUR_MagicBatteryNotifications_REPOSITORY$` placeholder in `check_batteries.sh` with the actual path to this directory on your system.
 
 4.  **Save and exit** the editor (Ctrl+O, Enter, Ctrl+X if using `nano`).
 
@@ -190,7 +186,7 @@ This `launchd` agent will run your script twice a day (e.g., 8 AM and 8 PM).
     </dict>
     </plist>
     ```
-    *   **Important:** Ensure the path to `check_batteries.sh` is correct: Therefore replace the $PATH_TO_YOUR_MagicBatteryNotifications_REPOSITORY$ placeholder in `check_batteries.sh` with the actual path to this directory on your system.
+    *   **Important:** Ensure the path to `check_batteries.sh` is correct: Therefore replace the `$PATH_TO_YOUR_MagicBatteryNotifications_REPOSITORY$` placeholder in `check_batteries.sh` with the actual path to this directory on your system.
     *   You can change `Hour` values (e.g., `9` for 9 AM, `17` for 5 PM) if you want different times.
 
 3.  **Save and exit** the editor (Ctrl+O, Enter, Ctrl+X if using `nano`).
