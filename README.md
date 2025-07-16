@@ -49,14 +49,14 @@ chmod +x ~/check_batteries.sh```
     MOUSE_NAME="Your Mouse Name"     # IMPORTANT: Replace with the exact name of your mouse as it appears in System Settings -> Bluetooth
     LOW_BATTERY_THRESHOLD=20         # Set your desired low battery percentage threshold
     DEBOUNCE_TIME=10                  # Prevent duplicate notifications within 10 seconds
-    ```
-
-    To find the exact names of your Bluetooth devices:
-    *   Go to **System Settings** > **Bluetooth**.
-    *   Note the names of your connected keyboard and mouse exactly as they appear there.
-
-    Save and exit the script after making your changes.
 ```
+
+To find the exact names of your Bluetooth devices:
+*   Go to **System Settings** > **Bluetooth**.
+*   Note the names of your connected keyboard and mouse exactly as they appear there.
+
+Save and exit the script after making your changes.
+
 
 
 ### 2. Test Notifications
