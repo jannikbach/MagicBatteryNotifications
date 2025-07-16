@@ -19,7 +19,7 @@ The system consists of a shell script (`check_batteries.sh`) that queries your B
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-  - [1. Prepare the `check_batteries.sh` Script](#1-prepare-the-check_batteries.sh-script)
+  - [1. Clone the Repository](#1-clone-the-repository)
   - [2. Test Notifications](#2-test-notifications)
   - [3. Create Launch Agent for Screen Lock Monitoring](#3-create-launch-agent-for-screen-lock-monitoring)
   - [4. Create Launch Agent for Scheduled Checks](#4-create-launch-agent-for-scheduled-checks)
@@ -33,7 +33,7 @@ The system consists of a shell script (`check_batteries.sh`) that queries your B
 
 ## Getting Started
 
-### 1. Clone the repository using: 
+### 1. Clone the Repository
 ``` bash 
 git clone https://github.com/jannikbach/MagicBatteryNotifications.git
 cd MagicBatteryNotifications
